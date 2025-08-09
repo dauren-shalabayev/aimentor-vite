@@ -551,7 +551,7 @@ const submitAnswer = async () => {
 const submitFinalResults = async () => {
   try {
     // Submit results to Getform
-    await axios.post('https://getform.io/f/bllzmwmb', {
+    await axios.post('https://getform.io/f/ayvyllqb', {
       email: userEmail.value,
       profession: selectedProfession.value.name,
       correctAnswers: correctAnswers.value,
@@ -575,7 +575,7 @@ const submitEmail = async () => {
 
   try {
     // Submit initial email to Getform
-    await axios.post('https://getform.io/f/bllzmwmb', {
+    await axios.post('https://getform.io/f/ayvyllqb', {
       email: userEmail.value,
       step: 'started_test',
       timestamp: new Date().toISOString()
